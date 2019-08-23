@@ -1,0 +1,31 @@
+{
+  "name": "oauth-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h64/oauth-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h64/oauth-boilerplate/issues"
+  },
+  "homepage": "https://github.com/h64/oauth-boilerplate#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.16.2",
+    "passport": "^0.4.0",
+    "passport-github2": "^0.1.11",
+    "pg": "^7.12.1",
+    "sequelize": "^5.16.0"
+  }
+}
