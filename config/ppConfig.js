@@ -13,8 +13,8 @@ function(accessToken, refreshToken, profile, cb) {
         where: { githubId: profile.id }
     })
     .spread((user, created) => {
-        console.log("Token:", accessToken);
-        return cb(null, user); // next(err, user)
+        let tempUser = { ...user.dataValues, accessToken };
+        return cb(null, tempUser); // next(err, user)
     })
 }))
 

@@ -1,0 +1,13 @@
+<nav style="display: flex; justify-content: space-between;">
+    <div>
+        <a href="/">Home</a>
+    </div>
+    <div>
+        <% if(currentUser) { %>
+            <a href="/api/repos">View my repos</a>
+            <a href="/auth/logout">Log out</a>
+        <% } else { %>
+            <a href="/auth/github">Login with GitHub</a>
+        <% } %>
+    </div>
+</nav>
